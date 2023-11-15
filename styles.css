@@ -1,0 +1,59 @@
+/* Reset some default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Loading screen styles */
+.loading-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensure it's on top of everything */
+}
+
+/* Spinner styles (you can replace this with your own spinner) */
+.spinner {
+    border: 4px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 4px solid #3498db;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Terminal-style text for the hacker effect */
+h1 {
+    font-family: 'Courier New', monospace; /* Use a monospaced font like Courier New */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #00ff00; /* Terminal green color */
+    background-color: #000000; /* Terminal black background */
+    padding: 10px; /* Add padding for spacing */
+    border: 2px solid #00ff00; /* Terminal green border */
+    border-radius: 5px; /* Add some rounding to the corners */
+    white-space: pre; /* Preserve whitespace (important for monospaced fonts) */
+}
+
+/* Terminal-style hover effect */
+h1:hover {
+    color: #000000; /* Change text color to black on hover */
+    background-color: #00ff00; /* Change background color to green on hover */
+}
+
+/* Add styles for other sections and elements as needed */
